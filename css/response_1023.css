@@ -1,0 +1,436 @@
+@media (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 28px;
+    }
+
+    .owl-dots
+    {
+        bottom: 20px;
+    }
+
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+    .block.bg
+    {
+        padding: 60px 0;
+    }
+
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 310px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+    }
+
+
+    header .info
+    {
+        display: none;
+
+        padding: 0;
+    }
+
+
+    header .menu
+    {
+        padding: 10px 0;
+    }
+
+    header .menu .item
+    {
+        width: 100%;
+    }
+
+    header .menu .item + .item
+    {
+        margin-left: 0;
+    }
+
+    header .menu .item > a
+    {
+        min-height: 40px;
+
+        text-align: left;
+
+        justify-content: flex-start;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+    .block_head .title
+    {
+        padding-bottom: 15px;
+    }
+
+    .block_head .title small
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .block_head .desc
+    {
+        line-height: 20px;
+
+        margin-top: 18px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 20px;
+    }
+
+    .form .line
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .cont
+    {
+        min-height: 380px;
+    }
+
+
+    .main_slider .slide .info
+    {
+        width: 535px;
+        padding: 0 0 0 50px;
+    }
+
+    .main_slider .slide .pre_title
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main_slider .slide .title
+    {
+        font-size: 44px;
+        line-height: 44px;
+    }
+
+    .main_slider .slide .desc
+    {
+        line-height: 20px;
+
+        margin-top: 20px;
+    }
+
+    .main_slider .slide .link
+    {
+        line-height: 20px;
+
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+
+
+
+    /*-----------------
+        Collections
+    -----------------*/
+    .collections .grid
+    {
+        margin-bottom: -10px;
+        margin-left: -10px;
+    }
+
+    .collections .grid > *
+    {
+        width: calc(25% - 10px);
+        height: 200px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .collections .grid > *.big_w
+    {
+        width: calc(50% - 10px);
+    }
+
+    .collections .grid > *.big_h
+    {
+        height: 410px;
+    }
+
+
+    .collections .item .info
+    {
+        padding: 20px;
+    }
+
+    .collections .item .name
+    {
+        font-size: 20px;
+    }
+
+    .collections .item .btn
+    {
+        margin-top: 15px;
+    }
+
+
+    .collections .item.big_w .name
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .collections .item.big_h .name
+    {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .slide .cont
+    {
+        min-height: 300px;
+    }
+
+    .stocks .slide .info
+    {
+        width: 515px;
+        padding: 60px 0 60px 80px;
+    }
+
+    .stocks .slide .percents
+    {
+        font-size: 100px;
+        line-height: 70px;
+    }
+
+    .stocks .slide .title
+    {
+        font-size: 58px;
+        line-height: 44px;
+    }
+
+    .stocks .slide .title span
+    {
+        font-size: 68px;
+    }
+
+    .stocks .slide .desc
+    {
+        line-height: 20px;
+
+        margin-top: 20px;
+    }
+
+    .stocks .slide .link
+    {
+        margin-top: 25px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .tabs
+    {
+        margin-bottom: 40px;
+    }
+
+    .products .tabs button + button
+    {
+        margin-left: 50px;
+    }
+
+
+    .products .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+    .products .product .timer
+    {
+        font-size: 20px;
+
+        bottom: 30px;
+    }
+
+    .products .product .brand
+    {
+        font-size: 16px;
+    }
+
+    .products .product .price
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .products .product .price .new
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .form
+    {
+        width: 680px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .item
+    {
+        height: 60px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .info
+    {
+        padding-top: 60px;
+    }
+
+
+    footer .bottom
+    {
+        padding: 20px 0;
+    }
+
+
+
+    footer .title
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 20px;
+    }
+
+
+
+    footer .contacts
+    {
+        width: auto;
+    }
+
+
+    footer .contacts .location br
+    {
+        display: block;
+    }
+
+
+
+    footer .links
+    {
+        width: 220px;
+    }
+
+
+
+    footer .col_right
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    footer .socials
+    {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,399 @@
+@media (max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 30px;
+    }
+
+
+    .wrap
+    {
+        padding: 0;
+    }
+
+
+    .owl-carousel .owl-nav button.owl-prev
+    {
+        left: 0;
+
+        margin-left: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-next
+    {
+        right: 0;
+
+        margin-right: 0;
+    }
+
+    .owl-dots
+    {
+        bottom: 30px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 70px;
+    }
+
+    .block.bg
+    {
+        padding: 65px 0;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        margin-bottom: 20px;
+    }
+
+
+    header .slogan span
+    {
+        margin-left: 100px;
+    }
+
+
+    header .links
+    {
+        margin-left: 30px;
+    }
+
+
+    header .menu .item + .item
+    {
+        margin-left: 50px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 35px;
+    }
+
+    .block_head .title
+    {
+        padding-bottom: 20px;
+    }
+
+    .block_head .title small
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .block_head .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .main_slider .slide .cont
+    {
+        min-height: 440px;
+    }
+
+
+
+    /*-----------------
+        Collections
+    -----------------*/
+    .collections .grid
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .collections .grid > *
+    {
+        width: calc(25% - 20px);
+        height: 240px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .collections .grid > *.big_w
+    {
+        width: calc(50% - 20px);
+    }
+
+    .collections .grid > *.big_h
+    {
+        height: 500px;
+    }
+
+
+    .collections .item .info
+    {
+        padding: 30px;
+    }
+
+
+    .collections .item.big_w .name
+    {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .collections .item.big_h .name
+    {
+        font-size: 44px;
+        line-height: 44px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .slide .cont
+    {
+        min-height: 340px;
+    }
+
+    .stocks .slide .info
+    {
+        width: 535px;
+        padding: 65px 0 65px 100px;
+    }
+
+    .stocks .slide .percents
+    {
+        font-size: 128px;
+        line-height: 90px;
+    }
+
+    .stocks .slide .title
+    {
+        font-size: 68px;
+        line-height: 50px;
+    }
+
+    .stocks .slide .title span
+    {
+        font-size: 78px;
+    }
+
+    .stocks .slide .link
+    {
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .tabs
+    {
+        margin-bottom: 60px;
+    }
+
+    .products .tabs button + button
+    {
+        margin-left: 60px;
+    }
+
+
+    .products .row
+    {
+        margin-bottom: -40px;
+        margin-left: -20px;
+    }
+
+    .products .row > *
+    {
+        width: calc(25% - 20px);
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+
+    .products .product .stickers
+    {
+        padding: 10px;
+    }
+
+    .products .product .thumb
+    {
+        margin-bottom: 15px;
+    }
+
+    .products .product .buy_btn
+    {
+        right: 10px;
+        bottom: 65px;
+    }
+
+    .products .product .favorite_btn
+    {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .products .product .timer
+    {
+        font-size: 22px;
+    }
+
+    .products .product .brand
+    {
+        font-size: 17px;
+    }
+
+    .products .product .price
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        margin-top: 15px;
+    }
+
+    .products .product .price .new
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article
+    {
+        line-height: 22px;
+    }
+
+    .articles .article .thumb
+    {
+        margin-bottom: 15px;
+    }
+
+    .articles .article .name
+    {
+        font-size: 18px;
+    }
+
+    .articles .article .author
+    {
+        margin-top: 5px;
+    }
+
+    .articles .article .desc
+    {
+        margin-top: 15px;
+    }
+
+
+    .articles .all_link
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands
+    {
+        padding: 40px 0;
+    }
+
+
+    .brands .item
+    {
+        height: 70px;
+    }
+
+
+
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .info
+    {
+        padding-top: 70px;
+    }
+
+
+    footer .bottom
+    {
+        padding: 25px 0;
+    }
+
+
+
+    footer .title
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        margin-bottom: 25px;
+    }
+
+
+
+    footer .contacts
+    {
+        line-height: 22px;
+
+        width: 320px;
+        max-width: 100%;
+    }
+
+    footer .contacts > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    footer .contacts .location br
+    {
+        display: none;
+    }
+}

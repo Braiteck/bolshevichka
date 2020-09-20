@@ -1,0 +1,301 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .block
+    {
+        margin-bottom: 50px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header .phone
+    {
+        display: none;
+    }
+
+
+    .mob_header .mob_link
+    {
+        display: flex;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title small
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .block_head .desc br
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        padding: 0 19px;
+    }
+
+    .form textarea
+    {
+        padding: 10px 19px;
+    }
+
+    .form .label
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .cont
+    {
+        min-height: 480px;
+
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+
+    .main_slider .slide .info
+    {
+        width: 380px;
+        padding: 0 0 0 40px;
+    }
+
+    .main_slider .slide .pre_title
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .main_slider .slide .title
+    {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .main_slider .slide .title span
+    {
+        font-size: 62px;
+    }
+
+    .main_slider .slide .desc
+    {
+        margin-top: 80px;
+    }
+
+    .main_slider .slide .link
+    {
+        line-height: 20px;
+
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+
+    .main_slider .slide .bg
+    {
+        background-position: 72% 50%;
+    }
+
+
+
+    /*-----------------
+        Collections
+    -----------------*/
+    .collections .grid > *
+    {
+        width: calc(50% - 10px);
+    }
+
+    .collections .grid > *.big_w
+    {
+        width: calc(100% - 10px);
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .slide .cont
+    {
+        min-height: 380px;
+    }
+
+    .stocks .slide .info
+    {
+        width: 400px;
+        padding: 60px 0 60px 40px;
+    }
+
+    .stocks .slide .title
+    {
+        font-size: 54px;
+        line-height: 42px;
+    }
+
+    .stocks .slide .title span
+    {
+        font-size: 64px;
+    }
+
+    .stocks .slide .desc
+    {
+        margin-top: 80px;
+    }
+
+    .stocks .slide .link
+    {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+
+    .stocks .slide .bg
+    {
+        background-position: 55% 50%;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .tabs
+    {
+        margin-bottom: 35px;
+    }
+
+    .products .tabs button + button
+    {
+        margin-left: 35px;
+    }
+
+
+    .products .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .products .product .timer
+    {
+        font-size: 18px;
+
+        bottom: 20px;
+    }
+
+    .products .product .brand
+    {
+        font-size: 15px;
+    }
+
+    .products .product .price
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .products .product .price .new
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .row
+    {
+        font-size: 0;
+
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-bottom: 0;
+        margin-left: -20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent;
+        scrollbar-width: 0;
+    }
+
+    .brands .row::-webkit-scrollbar
+    {
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+    .brands .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+    .brands .row > *
+    {
+        display: inline-block;
+
+        width: auto;
+        max-width: none;
+        height: auto;
+        margin-bottom: 0;
+        margin-left: 0;
+
+        vertical-align: middle;
+        white-space: normal;
+    }
+
+    .brands .row > * + *
+    {
+        margin-left: 50px;
+    }
+
+    .brands .item img
+    {
+        max-width: 180px;
+        max-height: 55px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts
+    {
+        width: 100%;
+    }
+
+
+    footer .links
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+}

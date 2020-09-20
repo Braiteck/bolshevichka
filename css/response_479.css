@@ -1,0 +1,203 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        padding: 10px 0;
+    }
+
+
+    .mob_header .mob_menu_btn
+    {
+        margin-right: 9px;
+    }
+
+
+    .mob_header .links
+    {
+        margin-left: auto;
+    }
+
+    .mob_header .links > * + *
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+    .form .label span:first-child
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .info
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main_slider .slide .title span
+    {
+        font-size: 58px;
+    }
+
+
+
+    /*-----------------
+        Collections
+    -----------------*/
+    .collections .grid
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-bottom: 0;
+        margin-left: -20px;
+    }
+
+    .collections .grid > *
+    {
+        width: 50%;
+        height: 180px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .collections .grid > *.big_w
+    {
+        width: 100%;
+    }
+
+    .collections .grid > *.big_h
+    {
+        height: 360px;
+    }
+
+    .collections .item.big_h .name
+    {
+        font-size: 34px;
+        line-height: 36px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .slide .info
+    {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .stocks .slide .title
+    {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    .stocks .slide .title span
+    {
+        font-size: 58px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .tabs
+    {
+        margin-bottom: 20px;
+    }
+
+    .products .tabs button
+    {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .products .tabs button + button
+    {
+        margin-left: 0;
+    }
+
+
+    .products .row
+    {
+        padding: 0 20px;
+    }
+
+    .products .row > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .products .product .timer .val
+    {
+        padding: 12px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .item img
+    {
+        max-width: 160px;
+        max-height: 55px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts .location br
+    {
+        display: none;
+    }
+
+
+    footer .socials
+    {
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    footer .socials span
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
