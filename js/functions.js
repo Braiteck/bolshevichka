@@ -72,6 +72,38 @@ $(() => {
 	}
 
 
+	// Мини всплывающие окна
+	$('.mini_modal_link').click(function (e) {
+		e.preventDefault()
+
+		const modalId = $(this).data('modal-id')
+
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active')
+			$('.mini_modal').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		} else {
+			$('.mini_modal_link').removeClass('active')
+			$(this).addClass('active')
+
+			$('.mini_modal').removeClass('active')
+			$(modalId).addClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'pointer')
+		}
+	})
+
+	// Закрываем всплывашку при клике за её пределами
+	$(document).click((e) => {
+		if ($(e.target).closest('.modal_cont').length === 0) {
+			$('.mini_modal, .mini_modal_link').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
+	})
+
+
 	// Моб. версия
 	if ($(window).width() < 360) $('meta[name=viewport]').attr('content', 'width=360, user-scalable=no')
 
@@ -97,7 +129,33 @@ $(() => {
 
 
 	if (is_touch_device()) {
-		// Закрытие моб. меню свайпом справо на лево
+		// Выпадающее меню на тач экранах
+		$('header .menu .item > a.sub_link').addClass('touch_link')
+
+		$('header .menu .item > a.sub_link').click(function (e) {
+			const $dropdown = $(this).next()
+
+			if ($dropdown.css('visibility') === 'hidden') {
+				e.preventDefault()
+
+				$('header .menu .sub_menu').removeClass('show')
+				$dropdown.addClass('show')
+
+				$('body').css('cursor', 'pointer')
+			}
+		})
+
+		// Закрываем под. меню при клике за его пределами
+		$(document).click((e) => {
+			if ($(e.target).closest('.menu').length === 0) {
+				$('header .menu .sub_menu').removeClass('show')
+
+				$('body').css('cursor', 'default')
+			}
+		})
+
+
+		// Закрытие моб. меню свайпом справо на лево или слева на право
 		let ts
 
 		$('body').on('touchstart', (e) => { ts = e.originalEvent.touches[0].clientX })

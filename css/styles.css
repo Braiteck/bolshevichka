@@ -379,6 +379,46 @@ button
 
 
 
+.modal_cont
+{
+    position: relative;
+}
+
+.mini_modal_link
+{
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+.mini_modal
+{
+    position: absolute;
+    z-index: 100;
+    top: calc(100% + 30px);
+    left: 0;
+
+    visibility: hidden;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.mini_modal.active
+{
+    top: 100%;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+
 .overlay
 {
     position: fixed;
@@ -690,10 +730,82 @@ header .cart .link
 }
 
 
+#search_modal
+{
+    right: 0;
+    left: auto;
+
+    width: 360px;
+    margin-top: 5px;
+    padding: 15px;
+
+    border: 1px solid #e8e8e8;
+    background: #fbfbfb;
+}
+
+#search_modal form
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#search_modal form ::-webkit-input-placeholder
+{
+    color: var(--text_color);
+}
+
+#search_modal form :-moz-placeholder
+{
+    color: var(--text_color);
+}
+
+#search_modal form :-ms-input-placeholder
+{
+    color: var(--text_color);
+}
+
+#search_modal form .input
+{
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: 14px;
+
+    display: block;
+
+    width: calc(100% - 100px);
+    height: 40px;
+    padding: 0 15px;
+
+    border: 1px solid #e8e8e8;
+    border-right: none;
+    background: #fff;
+}
+
+#search_modal form .submit_btn
+{
+    color: #fff;
+    font-size: 14px;
+
+    width: 100px;
+    height: 40px;
+
+    background: #0a0a0a;
+}
+
+
 
 header .menu
 {
     justify-content: center;
+}
+
+header .menu .item
+{
+    position: relative;
 }
 
 header .menu .item + .item
@@ -732,6 +844,69 @@ header .menu .item > a.active
 header .menu .item > a.red
 {
     color: #f00;
+}
+
+
+header .menu .sub_menu
+{
+    position: absolute;
+    z-index: 90;
+    top: calc(100% + 30px);
+    left: 0;
+
+    visibility: hidden;
+
+    width: 220px;
+    min-width: 100%;
+    padding: 7px 0;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+}
+
+header .menu .item:hover > a.touch_link + .sub_menu
+{
+    top: calc(100% + 30px);
+
+    visibility: hidden;
+
+    opacity: 0;
+}
+
+header .menu .item:hover .sub_menu,
+header .menu .item > a.touch_link + .sub_menu.show
+{
+    top: 100%;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+header .menu .sub_menu a
+{
+    color: var(--text_color);
+    font-size: 11px;
+    line-height: 15px;
+
+    display: block;
+
+    padding: 8px 20px;
+
+    transition: color .2s linear;
+    text-decoration: none;
+}
+
+header .menu .sub_menu a:hover,
+header .menu .sub_menu a.active
+{
+    color: #d38e72;
 }
 
 
@@ -957,6 +1132,73 @@ header .menu .item > a.red
 {
     width: 44px;
     height: 40px;
+}
+
+
+
+#mob_search_modal
+{
+    right: 0;
+    left: auto;
+
+    width: 100%;
+    padding: 15px 20px;
+
+    border: 1px solid #e8e8e8;
+    background: #fbfbfb;
+}
+
+#mob_search_modal form
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#mob_search_modal form ::-webkit-input-placeholder
+{
+    color: var(--text_color);
+}
+
+#mob_search_modal form :-moz-placeholder
+{
+    color: var(--text_color);
+}
+
+#mob_search_modal form :-ms-input-placeholder
+{
+    color: var(--text_color);
+}
+
+#mob_search_modal form .input
+{
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: 14px;
+
+    display: block;
+
+    width: calc(100% - 100px);
+    height: 40px;
+    padding: 0 15px;
+
+    border: 1px solid #e8e8e8;
+    border-right: none;
+    background: #fff;
+}
+
+#mob_search_modal form .submit_btn
+{
+    color: #fff;
+    font-size: 14px;
+
+    width: 100px;
+    height: 40px;
+
+    background: #0a0a0a;
 }
 
 
@@ -1335,10 +1577,9 @@ header .menu .item > a.red
 -----------------*/
 .main_slider
 {
-/*    width: calc(100% + 80px);
+    /*    width: calc(100% + 80px);
     margin-right: -40px;
     margin-left: -40px;*/
-
     background: #282829;
 }
 

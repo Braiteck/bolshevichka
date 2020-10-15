@@ -63,10 +63,18 @@
 								</div>
 
 								<div class="links">
-									<div class="search">
-										<button class="btn">
+									<div class="search modal_cont">
+										<button class="btn mini_modal_link" data-modal-id="#search_modal">
 											<img data-src="images/ic_search.png" alt="" class="lozad">
 										</button>
+
+										<div class="mini_modal" id="search_modal">
+											<form action="">
+												<input type="text" name="" value="" class="input" placeholder="Введите запрос">
+
+												<button type="submit" class="submit_btn">Найти</button>
+											</form>
+										</div>
 									</div>
 
 									<div class="account">
@@ -96,7 +104,15 @@
 									</div>
 
 									<div class="item">
-										<a href="/">коллекции</a>
+										<a href="/" class="sub_link">коллекции</a>
+
+										<div class="sub_menu">
+											<div><a href="/">Пункт подменю 1</a></div>
+											<div><a href="/">Пункт подменю 2</a></div>
+											<div><a href="/">Пункт подменю 3</a></div>
+											<div><a href="/">Пункт подменю 4 Пункт подменю 4</a></div>
+											<div><a href="/">Пункт подменю 5</a></div>
+										</div>
 									</div>
 
 									<div class="item">
@@ -126,7 +142,7 @@
 				</header>
 
 
-				<section class="mob_header">
+				<section class="mob_header modal_cont">
 					<div class="cont">
 
 						<button class="mob_menu_btn">
@@ -144,9 +160,17 @@
 
 						<div class="links">
 							<div class="search">
-								<button class="btn">
+								<button class="btn mini_modal_link" data-modal-id="#mob_search_modal">
 									<img data-src="images/ic_search.png" alt="" class="lozad">
 								</button>
+
+								<div class="mini_modal" id="mob_search_modal">
+									<form action="">
+										<input type="text" name="" value="" class="input" placeholder="Введите запрос">
+
+										<button type="submit" class="submit_btn">Найти</button>
+									</form>
+								</div>
 							</div>
 
 							<a href="tel:+74999754388" class="mob_link link">
