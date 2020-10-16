@@ -81,6 +81,7 @@ $(() => {
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active')
 			$('.mini_modal').removeClass('active')
+			$('.overlay').fadeOut(200)
 
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		} else {
@@ -89,6 +90,7 @@ $(() => {
 
 			$('.mini_modal').removeClass('active')
 			$(modalId).addClass('active')
+			$('.overlay').fadeIn(300)
 
 			if (is_touch_device()) $('body').css('cursor', 'pointer')
 		}
@@ -98,6 +100,8 @@ $(() => {
 	$(document).click((e) => {
 		if ($(e.target).closest('.modal_cont').length === 0) {
 			$('.mini_modal, .mini_modal_link').removeClass('active')
+
+			if (!$('body').hasClass('menu_open')) { $('.overlay').fadeOut(200) }
 
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		}

@@ -394,7 +394,7 @@ button
 .mini_modal
 {
     position: absolute;
-    z-index: 100;
+    z-index: 101;
     top: calc(100% + 30px);
     left: 0;
 
@@ -477,6 +477,8 @@ button
 header
 {
     margin-bottom: 21px;
+
+    background: var(--bg);
 }
 
 
@@ -914,7 +916,6 @@ header .menu .sub_menu a.active
 .mob_header
 {
     position: relative;
-    z-index: 99;
     top: 0;
     left: 0;
 
@@ -923,8 +924,14 @@ header .menu .sub_menu a.active
     width: 100%;
     padding: 12px 0;
 
-    background: #fff;
+    background: var(--bg);
 }
+
+.menu_open .mob_header
+{
+    z-index: 99;
+}
+
 
 .mob_header .cont
 {
